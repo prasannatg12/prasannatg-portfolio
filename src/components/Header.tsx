@@ -42,8 +42,9 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-background/90 backdrop-blur-xl border-b border-border/60 py-3' :'bg-transparent py-5'
+        scrolled || menuOpen
+          ? 'bg-background/95 backdrop-blur-xl border-b border-border/60 py-3'
+          : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -94,7 +95,7 @@ export default function Header() {
       </div>
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden absolute top-full left-0 right-0 bg-background/95 backdrop-blur-xl border-b border-border py-6 px-6 flex flex-col gap-4">
+        <div className="lg:hidden absolute top-full left-0 right-0 bg-background border-b border-border py-8 px-6 flex flex-col gap-5 shadow-2xl animate-in fade-in slide-in-from-top-2 duration-300">
           {navLinks?.map(link => (
             <a
               key={link?.href}

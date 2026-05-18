@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Next.js
 
 A modern Next.js 15 application built with TypeScript and Tailwind CSS.
@@ -90,6 +89,3 @@ You can check out the [Next.js GitHub repository](https://github.com/vercel/next
 - Styled with Tailwind CSS
 
 Built with ❤️ on Rocket.new
-=======
-# prasannatg-portfolio
->>>>>>> 04979af6b44a870fbd6d76a0940d4ad2708b2663
